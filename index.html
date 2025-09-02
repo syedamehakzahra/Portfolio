@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS CSS for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Syeda Mehak Zahra</div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text" data-aos="fade-up">
+            <h1>Hi, I’m <span>Mehak</span></h1>
+            <p><span id="typed"></span></p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+            <!-- Social Links -->
+            <div class="social-icons">
+                <a href="mailto:syedamehakzahra20@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/syedamehakzahra" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/syeda-mehak-zahra-967871372" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="hero-img" data-aos="fade-left">
+            <img src="profile.png" alt="Mehak's Photo" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>I’m Mehak Raza, a BS Software Engineering student and aspiring Full-Stack Developer exploring AI Agents. With skills in HTML, CSS, JavaScript, Java, and DSA (C++), I love building smart, user-friendly solutions and aim to merge full-stack development with AI innovation.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <div class="skill-name">HTML</div>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                <div class="skill-name">CSS</div>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+                <div class="skill-name">Java</div>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+                <div class="skill-name">C++</div>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+                <div class="skill-name">DSA (C++)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h2>Inventory Management System</h2>
+            <h3>C++</h3>
+            <p>A C++ console application for managing products, tracking inventory, handling customer carts, and generating purchase receipts with persistent storage.</p>
+            <a href="https://github.com/syedamehakzahra/Inventory-Management-System" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Online Food Delivery</h2>
+            <h3>HTML, CSS</h3>
+            <p>Responsive Business Website built with HTML & CSS, featuring a hero section, services, clients, and contact form. Fully optimized with Flexbox and media queries for seamless viewing on all devices.</p>
+            <a href="https://github.com/syedamehakzahra/online-food-delivery" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Quiz Application</h2>
+            <h3>Java</h3>
+            <p>A Java Swing-based Quiz Application implementing OOP concepts with features like timer, lifeline, and scoring.</p>
+            <a href="https://github.com/syedamehakzahra/Quiz-Application-Java" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="zoom-in">
+        <h2>Contact Me</h2>
+        <div class="contact-links">
+            <a href="mailto:syedamehakzahra20@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://github.com/syedamehakzahra"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/syeda-mehak-zahra-967871372"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Typed.js for hero typing effect -->
+    <script>
+        var typed = new Typed("#typed", {
+            strings: ["Software Engineering Student", "Front end Web Developer"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Syeda Mehak Zahra. All Rights Reserved.</p>
+        <div class="footer-links"></div>
+    </footer>
+
+</body>
+</html>
